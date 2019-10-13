@@ -1,2 +1,16 @@
+<br />
+<h1>Whats Your Favorite Breed of Dog??</h1>
+<%= simple_form_for @breed do |f| %>
+  <%= f.input :favorite %>
+  <%= f.input :author %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
+<br />
+<br />
+<br />
+<h3>Here Are Some of Our Favorites!!</h3>
+<br />
 <h1><%= @breed.favorite %></h1>
-<h2>- <%= @breed.author %></h2>
+<h2><%= @breed.author %></h2>
+
